@@ -1,6 +1,5 @@
 from pathlib import Path
 
-from datetime import timedelta
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -112,4 +111,3 @@ DJOSER = {
     'SET_PASSWORD_RETYPE': True,
     'USERNAME': 'username',
 }
-
