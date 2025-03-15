@@ -80,7 +80,7 @@ class GroupViewSet(viewsets.ReadOnlyModelViewSet):
     queryset = Group.objects.all()
     serializer_class = GroupSerializer
 
-    def create(self):
+    def create(self, request, *args, **kwargs):
         return Response(
             {
                 'detail': 'Создание групп доступно только через админ-панель.'
